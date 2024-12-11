@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontSize: {
-        lg: ["18px", "28px"],
+        lg: ["18px", "30px"],
     },
   },
   plugins: [],
