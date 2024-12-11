@@ -5,6 +5,7 @@ export default {
     extend: {
       fontSize: {
         lg: ["18px", "30px"],
+      },
     },
   },
   plugins: [],
