@@ -3,7 +3,7 @@ import { Button, Card, Navbar } from "./components/ui";
 
 export default function App() {
   return (
-    <main className="w-screen h-screen flex items-center justify-center relative">
+    <main className="w-screen h-screen flex items-center justify-center relative font-clash-grotesk">
       <Navbar />
       <Card>
         <RadioInput

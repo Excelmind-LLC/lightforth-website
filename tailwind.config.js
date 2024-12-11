@@ -14,7 +14,10 @@ export default {
             lineHeight: "30px",
           },
         ],
-        // lg: ["18px", "30px", "0.18px"],
+      },
+      fontFamily: {
+        "clash-grotesk": ["Clash Grotesk", "sans-serif"],
+        "helvetica-neue": ["Helvetica Neue", "sans-serif"],
       },
       colors: {
         button: {

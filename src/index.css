@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Clash Grotesk";
+  src:
+    url("./assets/fonts/clash-grotesk/ClashGrotesk-Regular.otf") format("truetype"),
+    url("./assets/fonts/clash-grotesk/ClashGrotesk-Medium.otf") format("truetype"),
+    url("./assets/fonts/clash-grotesk/ClashGrotesk-Bold.otf") format("truetype"),
+    url("./assets/fonts/clash-grotesk/ClashGrotesk-Semibold.otf") format("truetype");
+  font-weight: 400 500 700 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("./assets/fonts/Helvetica\ Neue\ Medium\ Extended.otf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
