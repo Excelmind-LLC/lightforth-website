@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ArrowLeftIcon } from "../../assets/icon";
 import { DispatchType, Steps } from "../../types";
 import { Button, Card, ProgressBar } from "../ui";
-import Checkbox from "../form/checkbox";
+import { Checkbox } from "../form";
 
 export const QuestionTwo = ({
   updateQuestion,
@@ -32,12 +32,17 @@ export const QuestionTwo = ({
         <ProgressBar />
       </div>
       <div className="w-full flex flex-col items-start gap-3 pr-20">
-        <Card.Heading>What’s the #1 Thing You Want in Your Next Job?</Card.Heading>
+        <Card.Heading>
+          What’s the #1 Thing You Want in Your Next Job?
+        </Card.Heading>
         <Card.Text>
-          Your dream job is waiting. Let’s make sure we know exactly what you’re looking for to match you with the best opportunities.
+          Your dream job is waiting. Let’s make sure we know exactly what you’re
+          looking for to match you with the best opportunities.
         </Card.Text>
       </div>
-      <p className="text-primary-300 text-[18px] leading-[26px]">Select as many as you want 🙂</p>
+      <p className="text-primary-300 text-[18px] leading-[26px]">
+        Select as many as you want 🙂
+      </p>
       <div className="w-full">
         <Checkbox
           options={options}
@@ -45,7 +50,12 @@ export const QuestionTwo = ({
           onChange={setSelectedOptions}
         />
       </div>
-      <Button disabled={selectedOptions.length === 0} onClick={() => updateQuestion("question 2 go")}>Next Step!</Button>
+      <Button
+        disabled={selectedOptions.length === 0}
+        onClick={() => updateQuestion("question 2 go")}
+      >
+        Next Step!
+      </Button>
     </Card>
   );
 };

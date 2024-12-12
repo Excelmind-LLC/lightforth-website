@@ -1,6 +1,7 @@
+import { UpdateQuestionStep } from "../../types";
 import { Button, Card, ProgressBar } from "../ui";
 
-export const Results = () => {
+export const Results = ({ updateQuestion }: UpdateQuestionStep) => {
   return (
     <Card>
       <ProgressBar />
@@ -24,7 +25,7 @@ export const Results = () => {
           </p>
         </div>
       </div>
-      <Button>Next Step!</Button>
+      <Button onClick={() => updateQuestion("question 4")}>Next Step!</Button>
     </Card>
   );
 };
