@@ -27,6 +27,7 @@ export default {
         primary: {
           100: "#2B2B2B",
           300: "#474747",
+          500: "#545454",
         },
         gray: {
           300: "#D0D5DD",
