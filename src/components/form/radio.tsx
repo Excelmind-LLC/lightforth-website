@@ -6,8 +6,14 @@ type RadioInputProps = {
     label: string;
     value: string;
   }>;
+  onSendValue: (value: string) => void;
 } & ComponentProps<"input">;
-export const RadioInput = ({ name, options, ...props }: RadioInputProps) => {
+export const RadioInput = ({
+  name,
+  options,
+  onSendValue,
+  ...props
+}: RadioInputProps) => {
   const [selectedValue, setSelectedValue] = useState<string | null>(null);
   return (
     <div className="w-full flex flex-col items-start gap-6">
@@ -36,7 +42,10 @@ export const RadioInput = ({ name, options, ...props }: RadioInputProps) => {
             name={name}
             id={value}
             value={value}
-            onChange={(e) => setSelectedValue(e.target.value)}
+            onChange={(e) => {
+              setSelectedValue(e.target.value);
+              onSendValue(e.target.value);
+            }}
             {...props}
             className="hidden"
           />

@@ -1,23 +1,14 @@
-import { RadioInput } from "./components/form";
-import { Button, Card, Navbar } from "./components/ui";
+import { useState } from "react";
+import { Navbar } from "./components/ui";
+import { QuestionView } from "./QuestionView";
+import { Steps } from "./types";
 
 export default function App() {
+  const [question, setQuestion] = useState<Steps>("get started");
   return (
     <main className="w-screen h-screen flex items-center justify-center relative font-clash-grotesk">
       <Navbar />
-      <Card>
-        <RadioInput
-          name="test"
-          options={[
-            {
-              label: "YES! I'm ready to take the shortcut to my dream job.",
-              value: "yes",
-            },
-            { label: "Maybe! Not sure... show me more!", value: "maybe" },
-          ]}
-        />
-        <Button>Let’s Get Started!</Button>
-      </Card>
+      <QuestionView question={question} updateQuestion={setQuestion} />
     </main>
   );
 }
