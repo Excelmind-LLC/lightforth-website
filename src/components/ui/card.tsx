@@ -1,4 +1,4 @@
-import { ComponentProps } from "react";
+import { ComponentProps, PropsWithChildren } from "react";
 import { cn } from "../../utils/cn";
 
 export const Card = ({ children }: ComponentProps<"div">) => {
@@ -8,6 +8,10 @@ export const Card = ({ children }: ComponentProps<"div">) => {
     </div>
   );
 };
+
+const CardContainer = ({ children }: PropsWithChildren) => (
+  <div className="w-full flex flex-col items-start gap-3">{children}</div>
+);
 
 const CardText = ({ children, className, ...props }: ComponentProps<"p">) => {
   return (
@@ -38,3 +42,4 @@ const CardHeading = ({
 
 Card.Heading = CardHeading;
 Card.Text = CardText;
+Card.Container = CardContainer;

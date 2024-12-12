@@ -12,14 +12,15 @@ export const GetStarted = ({
   return (
     <Card>
       <ProgressBar />
-      <div className="w-full flex flex-col items-start gap-3">
+      <Card.Container>
+        {" "}
         <Card.Heading>Your Job Search on Autopilot!</Card.Heading>
         <Card.Text>
           Imagine waking up to new job opportunities every day without lifting a
           finger. Just set it, forget it, and watch your career soar. Ready to
           turn your job search on autopilot?
         </Card.Text>
-      </div>
+      </Card.Container>
 
       <RadioInput
         name="test"
