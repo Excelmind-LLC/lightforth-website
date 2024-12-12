@@ -1,6 +1,7 @@
 import { GetStarted } from "./components/question-view/GetStarted";
 import { LetsGo } from "./components/question-view/lets-go";
-import { QuestionTwo } from "./components/question-view/QuestionTwo";
+import { QuestionOne } from "./components/question-view/question-one";
+import { QuestionThree } from "./components/question-view/question-three";
 import { DispatchType, Steps } from "./types";
 
 const views: Record<
@@ -9,7 +10,8 @@ const views: Record<
 > = {
   "get started": GetStarted,
   "lets go": LetsGo,
-  "question 1": QuestionTwo,
+  "question 1": QuestionOne,
+  "question 3": QuestionThree,
 };
 
 type QuestionViewProps = {
