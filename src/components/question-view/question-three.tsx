@@ -11,7 +11,7 @@ export const QuestionThree = ({
   const [radioValue, setRadioValue] = useState<string | null>(null);
   return (
     <Card>
-      <ProgressBar />
+      <ProgressBar width={25} onClick={() => updateQuestion("question 2 go")} />
       <Card.Container>
         <Card.Heading>
           Have You Tried Other Job Search Apps Before?

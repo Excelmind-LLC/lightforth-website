@@ -1,4 +1,4 @@
-import { ArrowLeftIcon, CircleIcon } from "../../assets/icon";
+import { CircleIcon } from "../../assets/icon";
 import { DispatchType, Steps } from "../../types";
 import { Button, Card, ProgressBar } from "../ui";
 
@@ -9,10 +9,8 @@ export const LetsGo = ({
 }) => {
   return (
     <Card animate>
-      <div className="w-full flex gap-2 items-center">
-        <ArrowLeftIcon />
-        <ProgressBar />
-      </div>
+      <ProgressBar width={5} onClick={() => updateQuestion("get started")} />
+
       <CircleIcon className="size-80 w-full flex items-center justify-center" />
       <div className="w-full flex flex-col items-center gap-[9px]">
         <h2 className="text-black font-medium text-[41px] leading-[57px]">

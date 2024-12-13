@@ -4,7 +4,7 @@ import { Button, Card, ProgressBar } from "../ui";
 export const Results = ({ updateQuestion }: UpdateQuestionStep) => {
   return (
     <Card>
-      <ProgressBar />
+      <ProgressBar width={30} onClick={() => updateQuestion("question 3")} />
       <Card.Container>
         <Card.Heading>
           Ready to See the Results of Using Lightforth?

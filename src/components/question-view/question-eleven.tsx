@@ -8,7 +8,7 @@ export const QuestionEleven = ({ updateQuestion }: UpdateQuestionStep) => {
 
   return (
     <Card>
-      <ProgressBar />
+      <ProgressBar width={75} onClick={() => updateQuestion("question 10")} />
       <Card.Container>
         <Card.Heading>
           Would You Prefer a Full-Time or Part-Time Role?

@@ -8,7 +8,7 @@ export const QuestionEight = ({ updateQuestion }: UpdateQuestionStep) => {
 
   return (
     <Card>
-      <ProgressBar />
+      <ProgressBar width={60} onClick={() => updateQuestion("question 7")} />
       <Card.Container>
         <Card.Heading>
           What Type of Companies Do You Want to Work For?

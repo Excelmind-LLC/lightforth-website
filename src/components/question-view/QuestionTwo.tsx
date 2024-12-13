@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { ArrowLeftIcon } from "../../assets/icon";
 import { DispatchType, Steps } from "../../types";
 import { Button, Card, ProgressBar } from "../ui";
 import { Checkbox } from "../form";
@@ -27,10 +26,7 @@ export const QuestionTwo = ({
 
   return (
     <Card>
-      <div className="w-full flex gap-2 items-center">
-        <ArrowLeftIcon />
-        <ProgressBar />
-      </div>
+      <ProgressBar width={15} onClick={() => updateQuestion("question 1")} />
       <div className="w-full flex flex-col items-start gap-3 pr-20">
         <Card.Heading>
           What’s the #1 Thing You Want in Your Next Job?

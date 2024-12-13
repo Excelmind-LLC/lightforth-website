@@ -4,7 +4,7 @@ import { Button, Card, ProgressBar } from "../ui";
 export const QuestionTwelve = ({ updateQuestion }: UpdateQuestionStep) => {
   return (
     <Card>
-      <ProgressBar />
+      <ProgressBar width={80} onClick={() => updateQuestion("question 11")} />
       <Card.Container>
         <Card.Heading>
           Lightforth AI Will Land You More Interviews!

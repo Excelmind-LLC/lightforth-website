@@ -22,7 +22,7 @@ export const QuestionFour = ({ updateQuestion }: UpdateQuestionStep) => {
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
   return (
     <Card>
-      <ProgressBar />
+      <ProgressBar width={35} onClick={() => updateQuestion("results")} />
       <Card.Container>
         <Card.Heading>What Type of Jobs Are You Looking For?</Card.Heading>
         <Card.Text>

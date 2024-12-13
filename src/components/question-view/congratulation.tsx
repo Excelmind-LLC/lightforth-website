@@ -4,7 +4,7 @@ import { Button, Card, ProgressBar } from "../ui";
 export const Congratulations = ({ updateQuestion }: UpdateQuestionStep) => {
   return (
     <Card animate>
-      <ProgressBar />
+      <ProgressBar width={40} onClick={() => updateQuestion("question 4")} />
       <div className="w-[435px] flex flex-col items-center mx-auto">
         <img
           src="/congratulation.gif"

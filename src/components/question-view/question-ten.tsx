@@ -8,7 +8,7 @@ export const QuestionTen = ({ updateQuestion }: UpdateQuestionStep) => {
 
   return (
     <Card>
-      <ProgressBar />
+      <ProgressBar width={70} onClick={() => updateQuestion("question 9")} />
       <Card.Container>
         <Card.Heading>Are You Open to Relocation?</Card.Heading>
         <Card.Text>

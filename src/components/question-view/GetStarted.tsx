@@ -13,7 +13,6 @@ export const GetStarted = ({
     <Card>
       <ProgressBar />
       <Card.Container>
-        {" "}
         <Card.Heading>Your Job Search on Autopilot!</Card.Heading>
         <Card.Text>
           Imagine waking up to new job opportunities every day without lifting a

@@ -7,7 +7,7 @@ export const QuestionSeven = ({ updateQuestion }: UpdateQuestionStep) => {
   const [radioValue, setRadioValue] = useState<string | null>(null);
   return (
     <Card>
-      <ProgressBar />
+      <ProgressBar width={55} onClick={() => updateQuestion("question 6")} />
       <Card.Container>
         <Card.Heading>How Many Interviews Do You Want to Land?</Card.Heading>
         <Card.Text>

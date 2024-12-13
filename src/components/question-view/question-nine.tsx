@@ -8,7 +8,7 @@ export const QuestionNine = ({ updateQuestion }: UpdateQuestionStep) => {
 
   return (
     <Card>
-      <ProgressBar />
+      <ProgressBar width={65} onClick={() => updateQuestion("question 8")} />
       <Card.Container>
         <Card.Heading>What’s Your #1 Career Goal Right Now?</Card.Heading>
         <Card.Text>

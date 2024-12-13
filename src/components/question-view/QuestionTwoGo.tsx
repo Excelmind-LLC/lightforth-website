@@ -1,4 +1,3 @@
-import { ArrowLeftIcon } from "../../assets/icon";
 import { DispatchType, Steps } from "../../types";
 import { Button, Card, ProgressBar } from "../ui";
 
@@ -9,10 +8,7 @@ export const QuestionTwoGo = ({
 }) => {
   return (
     <Card animate>
-      <div className="w-full flex gap-2 items-center">
-        <ArrowLeftIcon />
-        <ProgressBar />
-      </div>
+      <ProgressBar width={20} onClick={() => updateQuestion("question 2")} />
 
       <div className="w-full flex flex-col items-center">
         <img
