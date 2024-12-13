@@ -34,7 +34,7 @@ export const QuestionEleven = ({ updateQuestion }: UpdateQuestionStep) => {
       />
       <Button
         disabled={!radioValue}
-        onClick={() => updateQuestion("question 11")}
+        onClick={() => updateQuestion("question 12")}
       >
         Next Step
       </Button>

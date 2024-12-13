@@ -15,6 +15,11 @@ import { QuestionEight } from "./components/question-view/question-eight";
 import { QuestionNine } from "./components/question-view/question-nine";
 import { QuestionTen } from "./components/question-view/question-ten";
 import { QuestionEleven } from "./components/question-view/question-eleven";
+import { QuestionTwelve } from "./components/question-view/question-twelve";
+import { QuestionThirteen } from "./components/question-view/question-thirteen";
+import { QuestionFourteen } from "./components/question-view/question-fourteen";
+import { QuestionFifteen } from "./components/question-view/question-fifteen";
+import { QuestionSixteen } from "./components/question-view/question-sixteen";
 
 const views: Record<
   Steps,
@@ -36,6 +41,11 @@ const views: Record<
   "question 9": QuestionNine,
   "question 10": QuestionTen,
   "question 11": QuestionEleven,
+  "question 12": QuestionTwelve,
+  "question 13": QuestionThirteen,
+  "question 14": QuestionFourteen,
+  "question 15": QuestionFifteen,
+  "question 16": QuestionSixteen,
 };
 
 type QuestionViewProps = {
