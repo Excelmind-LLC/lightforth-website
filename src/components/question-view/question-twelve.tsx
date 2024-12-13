@@ -15,13 +15,13 @@ export const QuestionTwelve = ({ updateQuestion }: UpdateQuestionStep) => {
           interviews in just a few weeks
         </Card.Text>
       </Card.Container>
-      <div className="w-[629px] h-[401px] bg-[#F9F9F9] rounded-xl flex flex-col gap-9 justify-center items-center">
+      <div className="w-[629px] h-[401px] pt-12 pb-7 bg-[#F9F9F9] rounded-xl flex flex-col gap-9 justify-center items-center">
         <img
           src="/ai.png"
           alt="lightforth ai"
           className="w-[161px] h-[196px] object-center object-cover"
         />
-        <div className="w-[508px] h-[97px] border border-[#EAEAEA] rounded-full">
+        <div className="w-[508px] h-[97px] border border-[#EAEAEA] rounded-full flex items-center justify-center">
           <p className="text-primary-300 font-medium text-base font-clash-grotesk w-[420px]">
             Users who leverage Lightforth’s AI have landed 10x more interviews
             within weeks than their peer—you could be next!

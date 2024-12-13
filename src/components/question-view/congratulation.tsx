@@ -3,7 +3,7 @@ import { Button, Card, ProgressBar } from "../ui";
 
 export const Congratulations = ({ updateQuestion }: UpdateQuestionStep) => {
   return (
-    <Card>
+    <Card animate>
       <ProgressBar />
       <div className="w-[435px] flex flex-col items-center mx-auto">
         <img
