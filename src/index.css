@@ -20,6 +20,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Satoshi";
+  src: url("./assets/fonts/Satoshi-Bold.otf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* * hide scrollbar */
 .hide-scrollbar::-webkit-scrollbar {
   display: none;

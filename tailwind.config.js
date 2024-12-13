@@ -18,6 +18,7 @@ export default {
       fontFamily: {
         "clash-grotesk": ["Clash Grotesk", "sans-serif"],
         "helvetica-neue": ["Helvetica Neue", "sans-serif"],
+        satoshi: ["Satoshi", "sans-serif"],
       },
       colors: {
         button: {
