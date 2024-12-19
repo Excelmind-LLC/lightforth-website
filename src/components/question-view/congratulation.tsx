@@ -15,7 +15,7 @@ export const Congratulations = ({ updateQuestion }: UpdateQuestionStep) => {
           Congratulations
         </p>
         <p className="text-xl text-[#545454] leading-[30px]">
-          Lightforth found <span className="font-semibold">23,000</span> job
+          Lightforth found <span className="font-semibold">2,000</span> job
           openings for you right now. Your career is about to explode!”
         </p>
       </div>

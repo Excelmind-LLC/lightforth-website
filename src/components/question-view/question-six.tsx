@@ -15,14 +15,17 @@ export const QuestionSix = ({ updateQuestion }: UpdateQuestionStep) => {
           fit your salary expectations. What’s your ideal range?
         </Card.Text>
       </Card.Container>
-      <RadioInput
-        options={[
-          { label: "$50k - $70k", value: "$50k - $70k" },
-          { label: "$70k - $100k", value: "$70k - $100k" },
-          { label: "$100k+", value: "$100k+" },
-        ]}
-        onSendValue={(value) => setRadioValue(value)}
-      />
+      <Card.Body>
+        <RadioInput
+          options={[
+            { label: "$50k - $70k", value: "$50k - $70k" },
+            { label: "$70k - $100k", value: "$70k - $100k" },
+            { label: "$100k+", value: "$100k+" },
+          ]}
+          onSendValue={(value) => setRadioValue(value)}
+        />
+      </Card.Body>
+
       <Button
         disabled={!radioValue}
         onClick={() => updateQuestion("question 7")}

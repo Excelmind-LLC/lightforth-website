@@ -21,7 +21,7 @@ export const QuestionTwoGo = ({
         </h2>
         <p className="text-[21px] leading-[31px] text-primary-500 max-w-md text-center">
           Based on your choices, Lightforth already has{" "}
-          <span className="text-black-500 font-semibold">15,000 jobs</span> that
+          <span className="text-[#1F1F1F] font-semibold">20,000 jobs</span> that
           match your profile.”
         </p>
       </div>

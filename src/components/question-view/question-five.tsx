@@ -13,19 +13,25 @@ export const QuestionFive = ({ updateQuestion }: UpdateQuestionStep) => {
       />
       <Card.Container>
         <Card.Heading>What’s Your Ideal Job Location?</Card.Heading>
-        <Card.Text></Card.Text>
+        <Card.Text>
+          Whether you want to work from anywhere or need a specific city,
+          Lightforth can filter jobs that match your exact preferences.
+        </Card.Text>
       </Card.Container>
-      <RadioInput
-        options={[
-          {
-            label: "Remote",
-            value: "remote",
-          },
-          { label: "Local (city-specific)", value: "local" },
-          { label: "Global (anywhere in the world)", value: "Global" },
-        ]}
-        onSendValue={(value) => setRadioValue(value)}
-      />
+      <Card.Body>
+        <RadioInput
+          options={[
+            {
+              label: "Remote",
+              value: "remote",
+            },
+            { label: "Local (city-specific)", value: "local" },
+            { label: "Global (anywhere in the world)", value: "Global" },
+          ]}
+          onSendValue={(value) => setRadioValue(value)}
+        />
+      </Card.Body>
+
       <Button
         disabled={!radioValue}
         onClick={() => updateQuestion("question 6")}

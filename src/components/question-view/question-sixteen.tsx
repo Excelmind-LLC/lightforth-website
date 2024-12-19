@@ -17,15 +17,18 @@ export const QuestionSixteen = ({ updateQuestion }: UpdateQuestionStep) => {
           perfect.
         </Card.Text>
       </Card.Container>
-      <div className="w-[461px] border-[1.41px] border-[#838383] rounded-[5.63px] border-dashed flex justify-center items-center mx-auto py-12 px-9.5 font-satoshi">
-        <div className="flex flex-col items-center justify-center gap-2.5">
-          <CloudUploadIcon />
-          <p className="flex flex-col items-center justify-center font-bold text-[20px] leading-[38px] text-black">
-            Drag and drop your upload here or{" "}
-            <span className="text-[#52AB74]">Choose a file</span>
-          </p>
+      <Card.Body>
+        <div className="w-[461px] h-full border-[1.41px] border-[#838383] rounded-[5.63px] border-dashed flex justify-center items-center mx-auto py-12 px-9.5 font-satoshi">
+          <div className="flex flex-col items-center justify-center gap-2.5">
+            <CloudUploadIcon />
+            <p className="flex flex-col items-center justify-center font-bold text-[20px] leading-[38px] text-black">
+              Drag and drop your upload here or{" "}
+              <span className="text-[#52AB74]">Choose a file</span>
+            </p>
+          </div>
         </div>
-      </div>
+      </Card.Body>
+
       <Button onClick={() => updateQuestion("question 16")}>
         Analyze My Resume
       </Button>

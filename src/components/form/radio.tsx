@@ -21,11 +21,17 @@ export const RadioInput = ({
         <label
           htmlFor={value}
           key={index}
-          className="w-full flex py-[19px] px-[30px] items-center gap-4.5 border border-[#EAEAEA] rounded-md"
+          className={cn(
+            "w-full flex py-[19px] px-[30px] items-center gap-4.5 border-[1.2px] rounded-md",
+            {
+              "border-button-active": selectedValue === value,
+              "border-[#EAEAEA]": selectedValue !== value,
+            },
+          )}
         >
           <div
             className={cn(
-              "size-5 rounded-full border bg-white flex items-center justify-center",
+              "size-5 rounded-full border-[1.5px] bg-white flex items-center justify-center",
               {
                 "border-button-active": selectedValue === value,
                 "border-gray-300": selectedValue !== value,

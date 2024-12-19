@@ -21,20 +21,22 @@ export const GetStarted = ({
         </Card.Text>
       </Card.Container>
 
-      <RadioInput
-        name="test"
-        options={[
-          {
-            label: "YES! I'm ready to take the shortcut to my dream job.",
-            value: "yes",
-          },
-          { label: "Maybe! Not sure... show me more!", value: "maybe" },
-          { label: "Not sure... show me more!", value: "not sure" },
-        ]}
-        onSendValue={(value) => {
-          setRadioValue(value);
-        }}
-      />
+      <Card.Body>
+        <RadioInput
+          name="test"
+          options={[
+            {
+              label: "YES! I'm ready to take the shortcut to my dream job.",
+              value: "yes",
+            },
+            { label: "Maybe! Not sure... show me more!", value: "maybe" },
+            { label: "Not sure... show me more!", value: "not sure" },
+          ]}
+          onSendValue={(value) => {
+            setRadioValue(value);
+          }}
+        />
+      </Card.Body>
       <Button disabled={!radioValue} onClick={() => updateQuestion("lets go")}>
         Let’s Get Started!
       </Button>

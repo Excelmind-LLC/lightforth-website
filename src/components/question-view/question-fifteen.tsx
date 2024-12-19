@@ -16,27 +16,29 @@ export const QuestionFifteen = ({ updateQuestion }: UpdateQuestionStep) => {
           scenery. How far are you willing to go?
         </Card.Text>
       </Card.Container>
-      <RadioInput
-        options={[
-          {
-            label: "I’m confident—it’s ready to go!",
-            value: "I’m confident—it’s ready to go!",
-          },
-          {
-            label: "I could use some improvements.",
-            value: "I could use some improvements.",
-          },
-          {
-            label: "I haven’t updated it in a while.",
-            value: "I haven’t updated it in a while.",
-          },
-          {
-            label: "I’m not sure where to start.",
-            value: "I’m not sure where to start.",
-          },
-        ]}
-        onSendValue={(value) => setRadioValue(value)}
-      />
+      <Card.Body>
+        <RadioInput
+          options={[
+            {
+              label: "I’m confident—it’s ready to go!",
+              value: "I’m confident—it’s ready to go!",
+            },
+            {
+              label: "I could use some improvements.",
+              value: "I could use some improvements.",
+            },
+            {
+              label: "I haven’t updated it in a while.",
+              value: "I haven’t updated it in a while.",
+            },
+            {
+              label: "I’m not sure where to start.",
+              value: "I’m not sure where to start.",
+            },
+          ]}
+          onSendValue={(value) => setRadioValue(value)}
+        />
+      </Card.Body>
       <Button
         disabled={!radioValue}
         onClick={() => updateQuestion("question 16")}

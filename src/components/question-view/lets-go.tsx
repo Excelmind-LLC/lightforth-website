@@ -22,7 +22,9 @@ export const LetsGo = ({
         </p>
       </div>
 
-      <Button onClick={() => updateQuestion("question 1")}>Let's Go!</Button>
+      <Button onClick={() => updateQuestion("question 1")}>
+        Let’s make progress!
+      </Button>
     </Card>
   );
 };

@@ -8,7 +8,7 @@ export const QuestionTen = ({ updateQuestion }: UpdateQuestionStep) => {
 
   return (
     <Card>
-      <ProgressBar width={70} onClick={() => updateQuestion("question 9")} />
+      <ProgressBar width={70} onClick={() => updateQuestion("question 7")} />
       <Card.Container>
         <Card.Heading>Are You Open to Relocation?</Card.Heading>
         <Card.Text>
@@ -16,29 +16,30 @@ export const QuestionTen = ({ updateQuestion }: UpdateQuestionStep) => {
           scenery. How far are you willing to go?{" "}
         </Card.Text>
       </Card.Container>
-      <RadioInput
-        options={[
-          {
-            label: "Yes, I’m ready to relocate!",
-            value: "High-growth startups",
-          },
-          { label: "Changing industries", value: "Mid-sized companies" },
-          {
-            label: "No, I prefer staying local.",
-            value: "Top-tier established companies",
-          },
-          {
-            label: "Maybe, depending on the opportunity.",
-            value: "Nonprofits or mission-driven organizations",
-          },
-        ]}
-        onSendValue={(value) => setRadioValue(value)}
-      />
+      <Card.Body>
+        <RadioInput
+          options={[
+            {
+              label: "Yes, I’m ready to relocate!",
+              value: "High-growth startups",
+            },
+            {
+              label: "No, I prefer staying local.",
+              value: "Top-tier established companies",
+            },
+            {
+              label: "Maybe, depending on the opportunity.",
+              value: "Nonprofits or mission-driven organizations",
+            },
+          ]}
+          onSendValue={(value) => setRadioValue(value)}
+        />
+      </Card.Body>
       <Button
         disabled={!radioValue}
         onClick={() => updateQuestion("question 11")}
       >
-        Next Step
+        Your future starts here.
       </Button>
     </Card>
   );

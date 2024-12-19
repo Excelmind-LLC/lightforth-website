@@ -11,15 +11,13 @@ import { Congratulations } from "./components/question-view/congratulation";
 import { QuestionFive } from "./components/question-view/question-five";
 import { QuestionSix } from "./components/question-view/question-six";
 import { QuestionSeven } from "./components/question-view/question-seven";
-import { QuestionEight } from "./components/question-view/question-eight";
-import { QuestionNine } from "./components/question-view/question-nine";
-import { QuestionTen } from "./components/question-view/question-ten";
 import { QuestionEleven } from "./components/question-view/question-eleven";
 import { QuestionTwelve } from "./components/question-view/question-twelve";
 import { QuestionThirteen } from "./components/question-view/question-thirteen";
 import { QuestionFourteen } from "./components/question-view/question-fourteen";
 import { QuestionFifteen } from "./components/question-view/question-fifteen";
 import { QuestionSixteen } from "./components/question-view/question-sixteen";
+import { QuestionTen } from "./components/question-view/question-ten";
 
 const views: Record<
   Steps,
@@ -37,8 +35,8 @@ const views: Record<
   "question 5": QuestionFive,
   "question 6": QuestionSix,
   "question 7": QuestionSeven,
-  "question 8": QuestionEight,
-  "question 9": QuestionNine,
+  // "question 8": QuestionEight,
+  // "question 9": QuestionNine,
   "question 10": QuestionTen,
   "question 11": QuestionEleven,
   "question 12": QuestionTwelve,

@@ -21,16 +21,19 @@ export const QuestionThree = ({
           is its automation power. Let’s see if we’re a match.
         </Card.Text>
       </Card.Container>
-      <RadioInput
-        name="tried_other_job_search_options"
-        options={[
-          { label: "Yes, I’ve tried other job search apps.", value: "yes" },
-          { label: "No, this is my first time.", value: "no" },
-        ]}
-        onSendValue={(value) => setRadioValue(value)}
-      />
+      <Card.Body>
+        <RadioInput
+          name="tried_other_job_search_options"
+          options={[
+            { label: "Yes, I’ve tried other job search apps.", value: "yes" },
+            { label: "No, this is my first time.", value: "no" },
+          ]}
+          onSendValue={(value) => setRadioValue(value)}
+        />
+      </Card.Body>
+
       <Button disabled={!radioValue} onClick={() => updateQuestion("results")}>
-        Next
+        Let’s move forward
       </Button>
     </Card>
   );

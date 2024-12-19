@@ -18,25 +18,28 @@ export const QuestionEleven = ({ updateQuestion }: UpdateQuestionStep) => {
           lifestyle?
         </Card.Text>
       </Card.Container>
-      <RadioInput
-        options={[
-          {
-            label: "Full-time",
-            value: "High-growth startups",
-          },
-          { label: "Part-time", value: "Mid-sized companies" },
-          {
-            label: "Open to both",
-            value: "Top-tier established companies",
-          },
-        ]}
-        onSendValue={(value) => setRadioValue(value)}
-      />
+      <Card.Body>
+        <RadioInput
+          options={[
+            {
+              label: "Full-time",
+              value: "High-growth startups",
+            },
+            { label: "Part-time", value: "Mid-sized companies" },
+            {
+              label: "Open to both",
+              value: "Top-tier established companies",
+            },
+          ]}
+          onSendValue={(value) => setRadioValue(value)}
+        />
+      </Card.Body>
+
       <Button
         disabled={!radioValue}
         onClick={() => updateQuestion("question 12")}
       >
-        Next Step
+        Let’s turn this into results.
       </Button>
     </Card>
   );

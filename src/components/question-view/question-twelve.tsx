@@ -15,21 +15,24 @@ export const QuestionTwelve = ({ updateQuestion }: UpdateQuestionStep) => {
           interviews in just a few weeks
         </Card.Text>
       </Card.Container>
-      <div className="w-[629px] h-[401px] pt-12 pb-7 bg-[#F9F9F9] rounded-xl flex flex-col gap-9 justify-center items-center">
-        <img
-          src="/ai.png"
-          alt="lightforth ai"
-          className="w-[161px] h-[196px] object-center object-cover"
-        />
-        <div className="w-[508px] h-[97px] border border-[#EAEAEA] rounded-full flex items-center justify-center">
-          <p className="text-primary-300 font-medium text-base font-clash-grotesk w-[420px]">
-            Users who leverage Lightforth’s AI have landed 10x more interviews
-            within weeks than their peer—you could be next!
-          </p>
+      <Card.Body>
+        <div
+          className="w-[629px] h-full pt-12 pb-7 bg-cover bg-center rounded-xl flex gap-9 justify-center items-center"
+          style={{
+            backgroundImage: "url('/robot-handshake.jpg')",
+          }}
+        >
+          <div className="w-5/6 h-[205px] border border-white bg-white/5 rounded-2xl backdrop-blur-[5px] px-6 py-12 flex items-center justify-center">
+            <p className="text-white font-medium text-2xl font-clash-grotesk w-full">
+              Users who leverage Lightforth’s AI have landed 10x more interviews
+              within weeks than their peer—you could be next!
+            </p>
+          </div>
         </div>
-      </div>
+      </Card.Body>
+
       <Button onClick={() => updateQuestion("question 13")}>
-        Get Started Now!
+        Time to take action!
       </Button>
     </Card>
   );
