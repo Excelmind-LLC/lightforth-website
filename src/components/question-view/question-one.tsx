@@ -2,7 +2,6 @@ import { useState } from "react";
 import { RadioInput } from "../form";
 import { DispatchType, Steps } from "../../types";
 import { Button, Card, ProgressBar } from "../ui";
-import { SemicolonIcon } from "../../assets/icon";
 
 export const QuestionOne = ({
   updateQuestion,
